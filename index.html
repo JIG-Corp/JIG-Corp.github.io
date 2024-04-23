@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Landing Page - Start Bootstrap Theme</title>
+        <title>JIG Copr - Te sacamos la xuxa</title>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Bootstrap icons-->
@@ -13,6 +13,7 @@
         <!-- Google fonts-->
         <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
+        <!-- <link href="assets/aos/aos.css" rel="stylesheet"> -->
         <link href="assets/css/styles.css" rel="stylesheet" />
     </head>
     <body>
@@ -20,7 +21,7 @@
         <nav class="navbar navbar-light bg-light static-top">
             <div class="container">
                 <a class="navbar-brand" href="#!">Start Bootstrap</a>
-                <a class="btn btn-primary" href="#signup">Sign Up</a>
+                <a class="btn btn-primary" href="#contacto">Contactanos</a>
             </div>
         </nav>
         <!-- Masthead-->
@@ -154,51 +155,64 @@
                 </div>
             </div>
         </section>
-        <!-- Call to Action-->
-        <section class="call-to-action text-white text-center" id="signup">
-            <div class="container position-relative">
-                <div class="row justify-content-center">
-                    <div class="col-xl-6">
-                        <h2 class="mb-4">Ready to get started? Sign up now!</h2>
-                        <!-- Signup form-->
-                        <!-- * * * * * * * * * * * * * * *-->
-                        <!-- * * SB Forms Contact Form * *-->
-                        <!-- * * * * * * * * * * * * * * *-->
-                        <!-- This form is pre-integrated with SB Forms.-->
-                        <!-- To make this form functional, sign up at-->
-                        <!-- https://startbootstrap.com/solution/contact-forms-->
-                        <!-- to get an API token!-->
-                        <form class="form-subscribe" id="contactFormFooter" data-sb-form-api-token="API_TOKEN">
-                            <!-- Email address input-->
-                            <div class="row">
-                                <div class="col">
-                                    <input class="form-control form-control-lg" id="emailAddressBelow" type="email" placeholder="Email Address" data-sb-validations="required,email" />
-                                    <div class="invalid-feedback text-white" data-sb-feedback="emailAddressBelow:required">Email Address is required.</div>
-                                    <div class="invalid-feedback text-white" data-sb-feedback="emailAddressBelow:email">Email Address Email is not valid.</div>
-                                </div>
-                                <div class="col-auto"><button class="btn btn-primary btn-lg disabled" id="submitButton" type="submit">Submit</button></div>
-                            </div>
-                            <!-- Submit success message-->
-                            <!---->
-                            <!-- This is what your users will see when the form-->
-                            <!-- has successfully submitted-->
-                            <div class="d-none" id="submitSuccessMessage">
-                                <div class="text-center mb-3">
-                                    <div class="fw-bolder">Form submission successful!</div>
-                                    <p>To activate this form, sign up at</p>
-                                    <a class="text-white" href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
-                                </div>
-                            </div>
-                            <!-- Submit error message-->
-                            <!---->
-                            <!-- This is what your users will see when there is-->
-                            <!-- an error submitting the form-->
-                            <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </section>
+
+        <section id="contacto">
+			<div class="container-fluid bg-primary" data-aos="fade-up" data-aos-delay="100">
+				<div class="row gy-4">
+					<div class="col-lg-6">
+				 		<div class="info-item  d-flex flex-column justify-content-center align-items-center">
+							<i class="bi bi-map"></i>
+							<h3>Nuestra ubicacion</h3>
+							<p>Av.Providencia 1208, Of. 207, Providencia, Region Metropolitana</p>
+				  		</div>
+					</div>
+					<div class="col-lg-3 col-md-6">
+				  		<div class="info-item d-flex flex-column justify-content-center align-items-center">
+							<i class="bi bi-envelope"></i>
+							<h3>Correo electronico</h3>
+							<p>contactoo@JIG-Corp.cl</p>
+				  		</div>
+					</div>
+					<div class="col-lg-3 col-md-6">
+				  		<div class="info-item  d-flex flex-column justify-content-center align-items-center">
+							<i class="bi bi-telephone"></i>
+							<h3>Llamanos</h3>
+							<p>+56 9 69696969</p>
+				  		</div>
+					</div>
+			  	</div>
+			  	<div class="row gy-4 mt-1">
+					<div class="col-lg-6 ">
+				  		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3329.778711065708!2d-70.62379912463837!3d-33.42901317339801!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662cf6298821f1f%3A0xf4dd6fe22700341e!2sAv.%20Providencia%201208%2C%207500571%20Providencia%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses-419!2scl!4v1707437493532!5m2!1ses-419!2scl" frameborder="0" style="border:0; width: 100%; height: 384px;" allowfullscreen></iframe>
+					</div>
+					<div class="col-lg-6">
+						<form>
+							<div class="row gy-4">
+								<div class="col-lg-6 form-group">
+									<input type="text" name="name" class="form-control" id="name" placeholder="Nombre*" required>
+								</div>
+								<div class="col-lg-6 form-group">
+									<input type="phone" class="form-control" name="phone" id="phone" placeholder="Telefono">
+								</div>
+								<div class="col-lg-12 form-group">
+									<input type="email" class="form-control" name="email" id="email" placeholder="Correo Electronico*" required>
+								</div>
+								<div class="form-group">
+									<textarea class="form-control" name="message" rows="5" placeholder="Mensaje*" required></textarea>
+								</div>
+								<div class="col-12 col-md-8 offset-md-5">
+									<button type="button" class="btn btn-secondary btn-lg" onclick="submitForm()">Enviar</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+				<div class="row gy-4 mt-1">
+					<div class="div"></div>
+				</div>
+			</div>
+		</section>
+
         <!-- Footer-->
         <footer class="footer bg-light">
             <div class="container">
@@ -232,13 +246,10 @@
             </div>
         </footer>
         <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
         <!-- Core theme JS-->
         <script src="assets/js/scripts.js"></script>
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <!-- * *                               SB Forms JS                               * *-->
-        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+        <script src="assets/aos/aos.js"></script>
+
     </body>
 </html>
