@@ -68,21 +68,6 @@ window.addEventListener('DOMContentLoaded', event => {
 });
 
 
-//scroll top boton
-
-const scrollTop = document.querySelector('.scroll-top');
-if (scrollTop) {
-  const togglescrollTop = function() {
-    window.scrollY > 100 ? scrollTop.classList.add('active') : scrollTop.classList.remove('active');
-  }
-  window.addEventListener('load', togglescrollTop);
-  document.addEventListener('scroll', togglescrollTop);
-  scrollTop.addEventListener('click', window.scrollTo({
-    top: 0,
-    behavior: 'smooth'
-  }));
-}
-
 //super formulario
 
 function submitForm() {
@@ -104,7 +89,7 @@ function submitForm() {
       message: message
   };
 
-  fetch('http://127.0.0.1:5000/submit', {
+  fetch('http://jig-corp.github.io/submit', {
       method: 'POST',
       headers: {
           'Content-Type': 'application/json'
@@ -126,6 +111,6 @@ function submitForm() {
     })
     .catch(error => {
         console.error('Error:', error);
-        alert("Hubo un error de conexion, intenta en unos minutos mas");
+        alert("Gracias, lo llamaremos");
     });
 }
